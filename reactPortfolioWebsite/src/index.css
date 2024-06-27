@@ -1,0 +1,163 @@
+/*Google API link for getting Text fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* All elements*/
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+}  
+
+/* CSS Variables: */
+
+/*Root variable*/
+:root {
+    --color-bg: #1f2428;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #b0a16b;
+    --color-primary-variant: rgba(77,181,255,0.4);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255,0.6);
+
+    --transition: all 400ms ease;
+
+    /* Width of container class */
+    --container-width-lg: 75%;  /* Large */
+    --container-width-md: 86%;  /* Medium */
+    --container-width-sm: 90%;  /* Small */
+}
+
+
+/*No need of scrollbar*/
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*To scroll Smoothly*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /*From google api link*/
+    font-family: 'Poppins', sans-serif;
+    /*Background color taking from --color-bg variable which is defined in root variable*/
+    background: var(--color-bg);
+    /* background: linear-gradient(to right, var(--color-bg-left), var(--color-bg-right)); Gradient background */
+    color: var(--color-white);
+    line-height: 1.7;
+    background-image: url(../src/assets/bg-texture.png);
+}
+
+
+/* =========== General styles =============== */
+
+/*==========Container variable=========*/
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto; /*Position -middle--horizontally*/
+}
+
+/*=========Combined heading styles========*/
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+/*==============Only h1===========*/
+h1{
+    font-size: 2.5rem;
+}
+/*rem stands for "root em". It is a relative unit of measurement in CSS that scales relative to the root element's font size. If the root element (html) has a font size of 16px, then 1rem equals 16px.*/
+
+
+/*======All components will be wrapped in section tag =======*/
+section{
+    margin-top: 8rem;
+    /* height: 100vh; */
+}
+
+/*=============Two sections together============*/
+/*targets h2 and h5 elements that are direct children of section elements, centering their text and setting their color to a light variant.*/
+section>h1, section>h4{
+    text-align: center;
+    color: var(--color-light);
+}
+
+section >h1{
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+/*=============Every anchor tag==========*/
+a{
+    color: var(--color-primary);
+    transition: var(--transition);
+
+}
+
+/*hanges the color of anchor tags to white when hovered over, creating a visual indication of interactivity*/
+a:hover{
+    color: var(--color-white);
+}
+
+/*=========Various buttons=============*/
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+/*Image tag*/
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*===FOR DIFFERENT SCREEN SIZES===*/
+
+/*========== Media queries (Medium devices) ===============*/
+/*This media query applies styles to screens with a width of 1024px or less*/
+@media screen and (max-width:1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    section{
+        margin-top: 6rem;
+    }
+}
+
+
+/* ================Media queries (Small devices)=========== */
+@media screen and (max-width:600px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+    section >h2{
+        margin-bottom: 2rem;
+    }
+}
