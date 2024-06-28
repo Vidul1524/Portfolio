@@ -10,10 +10,10 @@ import { useState } from 'react'
 const Nav = () => {
   // to change the hovering of the active menu on the navbar. useState is used
   // activeNav is containing '#' and setActiveNav is used to change
-  const [activeNav,setActiveNav]=useState('#') //this # up here is making the background (hover) of the nav visible
+  const [activeNav,setActiveNav]=useState('#home') //this # up here is making the background (hover) of the nav visible
   return (
     <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><FaHome/></a>
+      <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === '#home' ? 'active' : ''}><FaHome/></a>
       <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''} ><RiUser3Line/></a>   
       <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><MdComputer/></a>
       <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><MdOutlineHomeRepairService/></a>
