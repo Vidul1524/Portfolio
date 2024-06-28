@@ -26,7 +26,7 @@ const data= [
     id:3,
     image:IMG3,
     title: 'Portfolio Website',
-    github: 'https://github.com/Vidul1524/'
+    github: 'https://github.com/Vidul1524/Portfolio'
   },
   {
     id:4,
