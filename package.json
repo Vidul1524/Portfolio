@@ -1,22 +1,21 @@
 {
-  "name": "your-app",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://Vidul1524.github.io/Portfolio",
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3"
-  },
+  "name": "your-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio website built with React",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   }
 }
