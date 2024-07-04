@@ -2,7 +2,7 @@
 ## 🚀Description:
 This project showcases my professional portfolio website built using React JS. It is designed to reflect my skills, experiences, and projects while providing a seamless user experience.
 
-### 🚀Key Features:
+## Key Features:
 
 ### 🚀Responsive Design: 
 A fully responsive personal portfolio website.
